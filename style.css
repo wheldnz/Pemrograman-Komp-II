@@ -12,6 +12,6 @@ img {
   height: 50px;
   width: 70px;
 }
-li .backend {
+.backend {
   color: red;
 }
