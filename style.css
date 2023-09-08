@@ -64,9 +64,7 @@ nav a:hover {
   align-items: center;
   height: 100vh;
 }
-img {
-  margin-top: 10px;
-}
+
 .main-content {
   text-align: center;
 }
@@ -76,6 +74,7 @@ img {
   height: 200px;
   border-radius: 50%;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .main-content h1 {
