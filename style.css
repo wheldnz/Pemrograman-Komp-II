@@ -102,6 +102,41 @@ img {
 }
 /* end main */
 
+/* start content */
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.section-title {
+  text-align: center;
+}
+
+.content-item {
+  flex: 1;
+  max-width: 300px;
+  text-align: center;
+}
+
+.content-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.content-item h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* end content */
+
 /* start contact */
 section.contact{
     background-color: #0f2c59;
