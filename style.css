@@ -103,11 +103,14 @@ img {
 /* end main */
 
 /* start contact */
+section.contact{
+    background-color: #0f2c59;
+}
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #0f2c59;
+  background-color: #fff;
   border-radius: 10px;
 }
 
