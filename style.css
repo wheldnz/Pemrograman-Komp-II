@@ -114,7 +114,7 @@ img {
 }
 
 .content-item {
-  flex: 1;
+  flex: 2;
   max-width: 300px;
   text-align: center;
 }
