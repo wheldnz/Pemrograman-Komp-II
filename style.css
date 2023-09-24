@@ -142,24 +142,6 @@ nav a:hover {
 .btn-wrapper p {
   margin: 10px 0;
 }
-
-.header {
-  background-color: #183d3d;
-  color: #f4f4f4;
-  height: 90px;
-}
-
-.header-logo {
-  float: left;
-  font-size: 36px;
-  padding: 20px 40px;
-}
-
-.header-list li {
-  float: left;
-  padding: 33px 20px;
-}
-
 .main {
   padding-top: 180px;
   padding-bottom: 100px;
