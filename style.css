@@ -34,7 +34,6 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 10px 20px;
 }
 
 .logo h1 {
@@ -70,10 +69,15 @@ header {
 .menu-list {
   list-style-type: none;
   display: flex;
+  align-items: center;
 }
 
 .menu-list li {
   margin-right: 20px;
+}
+
+.menu-list li img {
+  width: 50px;
 }
 
 .menu-list a {
