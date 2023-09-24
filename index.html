@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  </head>
     <title>Pemrograman Komputer 2</title>
   </head>
   <body>
@@ -13,7 +15,8 @@
       </div>
       <nav class="navbar">
         <div class="menu-toggle" id="menuToggle">
-          <input type="checkbox" />
+          <input type="checkbox" name="checkbox" id="checkbox" />
+          <label for="checkbox"></label>
           <div class="bar"></div>
           <div class="bar"></div>
           <div class="bar"></div>
@@ -21,89 +24,138 @@
         <ul class="menu-list" id="menu">
           <li><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#skill">Skill</a></li>
-          <li><a href="#project">Project</a></li>
+          <li><a href="#course">Course</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <section>
-      <div class="main">
-        <div class="main-content">
-          <img src="https://radargarut.jabarekspres.com/wp-content/uploads/2023/05/keca.png" alt="foto aing" />
-          <marquee behavior="" direction=""><h1>Belajar Pemrograman Komputer II</h1></marquee>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam sit suscipit porro maiores impedit possimus libero consequuntur. Molestiae, rerum voluptate modi temporibus veritatis sequi qui eos minima accusantium neque
-            beatae natus nihil tenetur quo ipsa eius dignissimos libero tempora cum deleniti nostrum minus distinctio commodi fugiat? Ratione itaque molestias illum.
-          </p>
+    <!-- code baru -->
+    
+    <div class="top-wrapper" id="about">
+        <div class="container">
+            <h1>BELAJAR CODING.</h1>
+            <h1>BELAJAR MENJADI LEBIH KREATIF.</h1>
+            <p>Progate adalah platform online untuk belajar coding.</p>
+            <p>Kami menawarkan lingkungan pemograman yang lengkap untuk mempermudah Anda memulai.</p>
+            <div class="btn-wrapper">
+                <a href="#" class="btn signup">Daftar dengan <i class="bi bi-envelope-at-fill"></i></a>
+                <p>atau</p>
+                <a href="#" class="btn facebook">Daftar dengan <i class="bi bi-facebook"></i></a>
+                <a href="#" class="btn twitter">Daftar dengan <i class="bi bi-twitter-x"></i></a>
+            </div>
         </div>
-      </div>
-    </section>
-    <section>
-      <div class="content-container" id="skill">
-        <h3 class="section-title">Pelajaran</h3>
-        <div class="contents-item">
-          <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/html.svg" alt="" />
-          <h3>HTML & CSS</h3>
-        </div>
-        <div class="contents-item">
-          <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/php.svg" alt="" />
-          <h3>PHP</h3>
-        </div>
-        <div class="contents-item">
-          <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/ruby.svg" alt="" />
-          <h3>Ruby</h3>
-        </div>
-        <div class="contents-item">
-          <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/swift.svg" alt="" />
-          <h3>Swift</h3>
-        </div>
-      </div>
-    </section>
+    </div>
+    <div class="lesson-wrapper">
+    </div>
+    <div class="message-wrapper">
+    </div>
 
-    <section class="contact">
-      <div class="contact-form" id="contact">
-        <h2>Hubungi Kami</h2>
-        <form action="#" method="post">
-          <div class="form-group">
-            <label for="nama">Nama:</label>
-            <input type="text" id="nama" name="nama" required />
+    <!-- main konten dimulai -->
+    <div class="main">
+        <div class="copy-container" id="course">
+            <h1>HELLO WORLD<span>.</span></h1>
+            <h2>Ayo belajar coding</h2>
+        </div>
+        <div>
+            <div class="contents">
+                <h3 class="section-title">Pelajaran</h3>
+
+                <div class="contents-item">
+                    <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/html.svg" alt="">
+                    <p>HTML & CSS</p>
+                </div>
+
+                <!-- Tambahkan tag <div> dengan class "contents-item" -->
+                <div class="contents-item">
+                    <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/php.svg" alt="">
+                    <p>PHP</p>
+                </div>
+
+                <!-- Tambahkan tag <div> dengan class "contents-item" -->
+                <div class="contents-item">
+                    <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/ruby.svg" alt="">
+                    <p>Ruby</p>
+                </div>
+
+                <!-- Tambahkan tag <div> dengan class "contents-item" -->
+                <div class="contents-item">
+                    <img
+                        src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/swift.svg" alt="">
+                    <p>Swift</p>
+                </div>
+            </div>
+
+            <div class="contact-form" id="contact">
+                <h3 class="section-title">Identitas Anda</h3>
+
+                <p>Email :<span>*</span></p>
+                <input type="text" id="email" name="email">
+
+                <p>Nama Lengkap :<span>*</span></p>
+                <input type="text" id="name" name="name">
+
+                <p>Agama :<span>*</span></p>
+
+                <form>
+                    <input type="radio" id="islam" name="fav_language" value="Islam">
+                    <label for="islam">Islam</label><br>
+                    <input type="radio" id="kristen" name="fav_language" value="kristen">
+                    <label for="islam">Kristen</label><br>
+                    <input type="radio" id="hindu" name="fav_language" value="hindu">
+                    <label for="islam">Hindu</label><br>
+                    <input type="radio" id="budha" name="fav_language" value="budha">
+                    <label for="islam">Budha</label><br>
+                    <input type="radio" id="konghuchu" name="fav_language" value="konghuchu">
+                    <label for="islam">Konghuchu</label>
+                </form>
+
+                <p>Pekerjaan :<span>*</span></p>
+                <form action="/action_page.php">
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="uiux">
+                    <label for="vehicle1">UI/UX Designer</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="backend">
+                    <label for="vehicle2">Backend Develompent</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="frontend">
+                    <label for="vehicle3">Frontend Development</label><br>
+                    <input type="checkbox" id="vehicle4" name="vehicle4" value="lainnya">
+                    <label for="vehicle3">lainnya..</label><br>
+                </form>
+
+                <p>Pesan</p>
+                <textarea>
+
+                </textarea>
+
+                <p>*Bidang wajib diisi.</p>
+                <input class="contact-submit" type="submit" value="Submit">
+
+            </div>
+
+        </div>
+        </div>
+
+        <footer>
+          <div class="footer-content">
+            <div class="address">
+              <p>Alamat: Jalan Jalan No. 1, Kota Malang, 57129</p>
+            </div>
+            <div class="navbar-button">
+              <a href="#">Home</a>
+              <a href="#about">About</a>
+              <a href="#course">Course</a>
+              <a href="#contact">Contact</a>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-group">
-            <label for="pesan">Pesan:</label>
-            <textarea id="pesan" name="pesan" rows="4" required></textarea>
-          </div>
-          <button type="submit" class="submit-button">Kirim Pesan</button>
-        </form>
-      </div>
-    </section>
+        </footer>
 
-    <footer>
-      <div class="footer-content">
-        <div class="address">
-          <p>Alamat: Jalan Jalan No. 1, Kota Malang, 57129</p>
-        </div>
-        <div class="navbar-button">
-          <a href="#">Home</a>
-          <a href="#about">About</a>
-          <a href="#skill">Skill</a>
-          <a href="#project">Project</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </div>
-    </footer>
-
-    <script>
-      const menuToggle = document.querySelector(".menu-toggle input");
-      const nav = document.querySelector("nav ul");
-
-      menuToggle.addEventListener("click", function () {
-        nav.classList.toggle("slide");
-      });
-    </script>
-  </body>
+        <script>
+          const menuToggle = document.querySelector(".menu-toggle input");
+          const nav = document.querySelector("nav ul");
+    
+          menuToggle.addEventListener("click", function () {
+            nav.classList.toggle("slide");
+          });
+        </script>
+</body>
 </html>
+
